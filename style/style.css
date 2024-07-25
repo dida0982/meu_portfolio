@@ -103,7 +103,7 @@ body {
 }
 
 .apresentacao_links_navegacao:hover {
-  background-color: var(--cor-houver);
+  background-color: var(--cor-primaria);
   /*tudo que estiver ai dentro vai ser estilizado quando o mouse passar por cima*/
 }
 
