@@ -8,7 +8,7 @@
   --cor-tercearia: #22d4fd;
   --cor-houver: #272727;
 
-  --fonte-primaria:"Krona One", sans-serif;
+  --fonte-primaria: "Krona One", sans-serif;
   --fonte-secundaria: "Montserrat", sans-serif;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .cabecalho_menu_link {
   font-family: var(--fonte-secundaria); /*estilo da font*/
-  font-size: 24px; /*tamanho da fonte */
+  font-size: 1.5rem; /*tamanho da fonte */
   font-weight: 600; /*negrito*/
   color: var(--cor-tercearia); /*cor do texto*/
   text-decoration: none; /*sem decoracao no texto*/
@@ -46,17 +46,18 @@ body {
   display: flex; /*coloca os objetos lado a lado*/
   align-items: center; /*alinha os itens no centro */
   justify-content: space-between; /**/
+  gap: 82px; /*espacamento*/
 }
 
 .apresentacao_conteudo {
-  width: 615px; /*altura*/
+  width: 50%; /*altura*/
   display: flex; /*coloca os obj lado a lado*/
   flex-direction: column; /*coloca os objetos em coluna*/
   gap: 40px; /*coloca espaco entres os objetos*/
 }
 
 .apresentacao_conteudo_titulo {
-  font-size: 36px; /*tamanho do texto*/
+  font-size: 2.25rem; /*tamanho do texto*/
   font-family: var(--fonte-primaria); /*estilo da fonte*/
 }
 
@@ -65,8 +66,8 @@ body {
 }
 
 .apresentacao_conteudo_texto {
-  font-size: 24px; /*tamanho da fonte*/
-  font-family: var(--fonte-secundaria) /*estilo da fonte*/
+  font-size: 1.5rem; /*tamanho da fonte*/
+  font-family: var(--fonte-secundaria); /*estilo da fonte*/
 }
 
 .apresentacao_links {
@@ -77,16 +78,16 @@ body {
   gap: 32px; /*da espaco em todos os lados*/
 }
 
-.apresentacao_links_links {
+.apresentacao_links_navegacao {
   /* background-color: #22d4fd; /*coe de fundo do link*/
   display: flex; /*gruda tudo na esquerda*/
   justify-content: center; /*coloca no centro*/
   gap: 16px; /*espacamento*/
   border: 2px solid var(--cor-tercearia); /*borda azul*/
-  width: 378px; /*largura*/
+  width: 50%; /*largura*/
   text-align: center; /*centraliza o texto*/
   border-radius: 8px; /*arredonda borda*/
-  font-size: 24px; /*tamanho da fonte */
+  font-size: 1.5rem; /*tamanho da fonte */
   font-weight: 600; /*negrito*/
   padding: 21.5px 0; /**/
   text-decoration: none; /*tira a decoracao do <a>*/
@@ -103,7 +104,13 @@ body {
 .apresentacao_links_subtitulo {
   font-family: var(--fonte-primaria);
   font-weight: 400; /*negrito*/
-  font-size: 24px; /*tamanho da fonte */
+  font-size: 1.5rem; /*tamanho da fonte */
+}
+
+.apresentacao_imagem {
+  border: 5px solid var(--cor-tercearia); /*borda grossa(2px) e azul*/
+  border-radius: 40px; /*arredonda borda*/
+  width: 50%;
 }
 
 .rodape {
@@ -112,11 +119,27 @@ body {
   background-color: var(--cor-tercearia); /*cor de fundo */
   text-align: center; /*texto vai para o centro*/
   font-family: var(--fonte-primaria); /*estilo da font*/
-  font-size: 24px; /*tamanho da letra*/
+  font-size: 1.5rem; /*tamanho da letra*/
   font-weight: 400; /*negrito*/
 }
 
-.imagem {
-  border: 5px solid var(--cor-tercearia); /*borda grossa(2px) e azul*/
-  border-radius: 40px; /*arredonda borda*/
+@media (max-width: 1200px) {
+  /*para adaptar ao celular quando chegar a menos de 1200px */
+  .cabecalho {
+    padding: 10%; /*espacamento*/
+  }
+
+  .cabecalho_menu {
+    justify-content: center; /*para centralizar*/
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse; /*ele troca a ordem dos elementos*/
+    padding: 5%; /*espacamento geral*/
+  }
+
+  .apresentacao_conteudo{
+    width: auto;
+  }
+
 }
