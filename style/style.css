@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
   background-color: var(--cor-primaria); /*cor de fundo*/
   color: var(--cor-secundaria); /*cor do texto*/
-  background-image: url('../assets/astronalta.jpg'); /* Adiciona imagem de fundo */
+  background-image: url("../assets/astronalta.jpg"); /* Adiciona imagem de fundo */
   background-size: cover; /* Garante que a imagem cubra toda a área disponível */
   background-position: center; /* Centraliza a imagem no elemento */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -30,7 +30,6 @@ body {
 
 .cabecalho {
   padding: 2% 0 0 15%; /*espacamento cima, deireita, ...*/
-  
 }
 
 .cabecalho_menu {
