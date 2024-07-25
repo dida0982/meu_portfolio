@@ -16,6 +16,7 @@
   margin: 0; /*margem*/
   padding: 0; /*margem em baixo em cima*/
 }
+
 body {
   /*height: 100vh; /*altura*/
   box-sizing: border-box;
@@ -96,9 +97,9 @@ body {
   font-family: "Montserrat", sans-serif; /*estilo da font*/
 }
 
-.apresentacao_links_links:hover {
-  /*tudo que estiver ai dentro vai ser estilizado quando o mouse passar por cima*/
+.apresentacao_links_navegacao:hover {
   background-color: var(--cor-houver);
+  /*tudo que estiver ai dentro vai ser estilizado quando o mouse passar por cima*/
 }
 
 .apresentacao_links_subtitulo {
@@ -138,8 +139,7 @@ body {
     padding: 5%; /*espacamento geral*/
   }
 
-  .apresentacao_conteudo{
+  .apresentacao_conteudo {
     width: auto;
   }
-
 }
