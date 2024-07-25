@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="./index.html">Home</a>
+            <a class="cabecalho_menu_link" href="./about.html">Sobre mim</a>
+        </nav> <!--parte de cima da pagina-->
+    </header> <!--parte de cima da pagina-->
     <main class="apresentacao">
       <section class="apresentacao_conteudo">
         <h1 class="apresentacao_conteudo_titulo">
@@ -23,14 +28,21 @@
           em prática boas ideias. Vamos conversar?
         </p>
         <div class="apresentacao_links">
-          <a class="apresentacao_links_links" href="https://www.linkedin.com/in/guilherme-barros-jr-6a0369209/"
-            >Linkedin</a
+          <h2 class="apresentacao_links_subtitulo">Acesse minhas redes</h2>
+          <a
+            class="apresentacao_links_links"
+            href="https://www.linkedin.com/in/guilherme-barros-jr-6a0369209/"
+            > <img src="./assets/linkedin.png"> Linkedin</a
           >
-          <a class="apresentacao_links_links" href="https://github.com/dida0982">GitHub</a>
+          <a class="apresentacao_links_links" href="https://github.com/dida0982"
+            > <img src="./assets/github.png"> GitHub</a
+          >
         </div>
       </section>
-      <img src="./Rectangle 3.png" alt="Foto do Guilherme Barros programando" />
+      <img class="imagem" src="./assets/eeu.png" alt="Foto do Guilherme Barros programando" />
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por Guilherme Barros.</p>
+    </footer>
   </body>
 </html>
