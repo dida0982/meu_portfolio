@@ -132,10 +132,12 @@ body {
   /*para adaptar ao celular quando chegar a menos de 1200px */
   .cabecalho {
     padding: 10%; /*espacamento*/
+    
   }
 
   .cabecalho_menu {
     justify-content: center; /*para centralizar*/
+    gap: 18px;
   }
 
   .apresentacao {

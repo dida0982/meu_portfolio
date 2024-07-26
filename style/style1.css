@@ -24,8 +24,24 @@ body{
     padding: 0;
 }
 
+.cabecalho {
+    padding: 2% 0 0 15%; /*espacamento cima, deireita, ...*/
+  }
+  
+  .cabecalho_menu {
+    display: flex; /*separar*/
+    gap: 80px; /*espacamento*/
+  }
+  
+  .cabecalho_menu_link {
+    font-family: var(--fonte-secundaria); /*estilo da font*/
+    font-size: 1.5rem; /*tamanho da fonte */
+    font-weight: 600; /*negrito*/
+    color: var(--cor-tercearia); /*cor do texto*/
+    text-decoration: none; /*sem decoracao no texto*/
+  }
+
 .principal{
-    
     align-items: center; /*alinha ao centro da tela*/
     text-align: center; /*alinha texto ao centro*/
 }
@@ -34,6 +50,7 @@ body{
     height: 100vh; /*altura*/
     display: grid;
     grid-template-columns: 50% 50%;
+    
 }
 
 .container_botao {
@@ -49,6 +66,7 @@ body{
 .botao_secundario{
     background-color: transparent; /*cor de fundo transparent*/
     border: 2px solid var(--branco-principal); /*borda branca*/
+    
 }
 
 .container_aviso{
@@ -57,8 +75,10 @@ body{
 }
 
 .container_titulo{
-    font-size: 28px; /*tamanho da font*/
+    font-size: 40px; /*tamanho da font*/
     font-weight: 700; /*peso de font*/
+    text-align: center;
+    margin-top: 50px;
 }
 
 .container_imagem{
@@ -76,7 +96,7 @@ body{
 
 .secundario{
     align-items: center; /*alinhar ao centro*/
-    margin: 0 10rem;
+    margin: -10rem 10rem;
 }
 
 .descricao_titulo{
@@ -155,4 +175,46 @@ body{
 .container_botao:hover{
     background-color: var(--botao-azul-efeitos);
     color: var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 768px){ /*responsividade para celular*/
+    .cabecalho {
+        padding: 10%; /*espacamento*/
+        
+      }
+    
+      .cabecalho_menu {
+        justify-content: center; /*para centralizar*/
+        gap: 18px;
+      }
+
+    .container{
+        display: block;
+        background-image: none;
+    }
+    .container_imagem{
+        width: 50vw; /*altura*/
+        
+    }
+    .container_caixa{
+        margin: 2em 2em;
+    }
+    .secundario{
+        margin: 0;
+        text-align: center; /*texto no centro*/
+    }
+    .secundario_imagem{
+        width: 50vw; /*altura*/
+        
+    }
+    .dispositivos_lista{
+        display: block;/*bloqueou das iamgens ficarem uma do lado da outra*/
+    }
+    .rodape_logo{
+        align-items: center;
+    }
+
+    .rodape_lista{
+        display: block;
+    }
 }

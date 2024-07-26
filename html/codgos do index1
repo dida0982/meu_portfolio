@@ -1,0 +1,29 @@
+<section class="container principal">
+    <!--a section separa esses codigos de outros codigos da pagina-->
+    <div class="container_caixa">
+      <h1 class="container_titulo">
+          Transforme sua presença online com um site profissional!
+      </h1 >
+      <a href="../html/index.html">
+          <img class="container_imagem" src="../assets/guitec_logo1.png" alt="Minha Logo Guitec" url="" />
+      </a>
+      <a
+        class="container_botao"
+        href="../html/index.html"
+        >Voltar para Home</a
+      >
+      <!--link-->
+      <a
+        class="container_botao botao_secundario"
+        href="https://www.linkedin.com/in/guilherme-barros-jr-6a0369209/"
+        >Entre em contato comigo pelo meu Linkedin</a
+      >
+      <p class="container_aviso">
+        *Desenvolvemos sites que encantam e convertem visitantes em clientes..
+      </p>
+    </div>
+  </section>
+ 
+ <a href="https://www.linkedin.com/in/guilherme-barros-jr-6a0369209/">
+            <img class="rodape_logo" src="../assets/guitec_logo1.png" alt="imagem de uma logo">
+        </a>
