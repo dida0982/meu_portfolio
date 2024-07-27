@@ -1,0 +1,26 @@
+.cabecalho_menu-hanburgue{
+    width: 24px; /*largura*/
+    height: 24px; /*altura*/
+    background-image: url(../assets/Menu.svg); /*imagem*/
+    background-repeat: no-repeat;
+    background-position: center; /*posicionar no centro*/
+    display: inline-block; /**/
+    
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between; /*separa os objetos*/
+    align-items: center; /*alinha os objetos*/
+}
+
+.container{
+    display: flex;
+    align-items: center; /*alinha no centro */
+}
+
+.container_imagem{
+    padding: 1rem; /*espacamento*/
+}
+

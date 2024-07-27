@@ -1,0 +1,20 @@
+@import url("../style/header.css"); /*puxou o header.css*/
+
+:root {
+  /*global css*/
+  --cor-de-fundo: #ebecee;
+  --branco: #FFFFFF
+}
+
+body {
+  background-color: var(--cor-de-fundo); /*cor de fundo */
+  background-image: url(../assets/astronalta.jpg); /*imagem de fundo*/
+  background-size: cover; /* Garante que a imagem cubra toda a área disponível */
+  background-position: center; /* Centraliza a imagem no elemento */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+html, body {
+    height: 100%;  /* Garante que o html e body tenham no mínimo a altura da janela */
+    min-height: 100vh; /* Usa unidades de viewport para a altura mínima */
+}
