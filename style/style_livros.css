@@ -1,9 +1,14 @@
 @import url("../style/header.css"); /*puxou o header.css*/
+@import url("../style/banner.css");
+@import url("../style/carrocel.css");
 
 :root {
   /*global css*/
   --cor-de-fundo: #ebecee;
-  --branco: #FFFFFF
+  --branco: #FFFFFF;
+  --laranja: #eb9b00; 
+  --azul-degrade: linear-gradient(97.5deg, #002F52 35.49%, #326589 165.37%);
+  --fonte-principal: "Poppins";
 }
 
 body {
@@ -12,6 +17,9 @@ body {
   background-size: cover; /* Garante que a imagem cubra toda a área disponível */
   background-position: center; /* Centraliza a imagem no elemento */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
+  font-family: var(--fonte-principal); /*estilo da fonte*/
+  font-size: 16px; /*tamanho da font*/
+  font-weight: 400; /*peso da font*/
 }
 
 html, body {

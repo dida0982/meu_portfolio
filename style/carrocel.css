@@ -1,0 +1,10 @@
+.carrocel_titulo{
+   color: var(--laranja);
+/*background-color: var(--branco);*/
+text-align: center;
+text-transform: uppercase; /*deixar tudo maiousculo*/
+font-size: 18px; /*tamanho da font*/
+font-weight: 700; /*negrito*/
+padding: 1em 0 0.5em 0; /*espacamento*/
+
+}
