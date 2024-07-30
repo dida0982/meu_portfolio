@@ -1,0 +1,30 @@
+.topicos {
+    background: var(--azul-degrade); /*coe de fundo*/
+    text-align: center; /*centralizar */
+    padding: 1em 0; /*espacamento de 1 em cima e em baixo, e 0 dos lados*/
+}
+
+.topicos_titulos{
+    color: var(--branco); /*cor do texto*/
+    font-weight: 300; /*peso da font*/
+    margin-bottom: 1em;
+}
+
+.topicos_lista{
+    display: flex; /*colocar um do lado do outro*/
+    flex-wrap: wrap; /*quebrar linha*/
+    justify-content: center; /*centralizar*/
+}
+
+.topicos_item{
+    margin: 2em 0.5rem; /*espacamento*/
+}
+
+.topicos_link{
+    color: var(--branco); /*cor da font*/
+    padding: 1em; /*espacamento*/
+    background-color: var(--laranja); /*cor de fundo da ancora*/
+    text-decoration: none; /*desativar estilos automaticos*/
+    font-size: 14px; /*tamanho da font*/
+    font-weight: 700; /*peso da font*/
+}
