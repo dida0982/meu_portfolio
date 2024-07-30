@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GuiTec Livros</title>
     <link rel="stylesheet" href="../style/reset.css" />
-    <link rel="stylesheet" href="../style/style_livros.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../style/style_livros.css" />
   </head>
   
   <body>
@@ -43,6 +44,29 @@
     </section>
     <section class="carrosel">
       <h2 class="carrocel_titulo">ÚLTIMOS LANÇAMENTOS</h2>
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="../assets/ReactNative.svg" alt="livro de ReactNative" ></div>
+    <div class="swiper-slide"><img src="../assets/Tuning.svg" alt="livro de Tuning" ></div>
+    <div class="swiper-slide"><img src="../assets/Nodejs.svg" alt="livro de Nodejs"></div>
+    <div class="swiper-slide"><img src="../assets/Angular.svg" alt="livro de Angular"></div>
+    <div class="swiper-slide"><img src="../assets/Acessibilidade.svg" alt="livro de acessibilidade"></div>
+    <div class="swiper-slide"><img src="../assets/Guia Front-end.svg" alt="livro de Front-end"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--rolamento de tela-->
   </body>
 </html>
