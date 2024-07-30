@@ -47,6 +47,10 @@
       <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide"><img src="../assets/ReactNative.svg" alt="livro de ReactNative" ></div>
@@ -56,17 +60,110 @@
     <div class="swiper-slide"><img src="../assets/Acessibilidade.svg" alt="livro de acessibilidade"></div>
     <div class="swiper-slide"><img src="../assets/Guia Front-end.svg" alt="livro de Front-end"></div>
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
 </div>
+
+  <div class="card">
+    <!--primeira linha-->
+    <div class="card_descricao">
+      <!--segunda coluna-->
+      <div class="descricao">
+        <h3 class="descricao_titulo">Talvez você também se interesse por...</h3>
+        <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+        <p class="descricao_texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+      </div>
+      <!--2 coluna-->
+      <img src="../assets/Mask group.svg" alt="imagem de um a com escudo vermelho atras">
+    </div>
+
+    <!--segunda coluna-->
+    <div class="card_botoes">
+      <!--primeira coluna-->
+      <ul class="botoes">
+        <li class="botoes_item"><img src="../assets/Favoritos.svg" alt="imagem favoritos"></li>
+        <li class="botoes_item"><img src="../assets/Compras.svg" alt=""></li>
+      </ul>
+      <a class="botoes_ancora" href="#">Saiba mais</a>
+    </div>
+  </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--rolamento de tela-->
+    <script>
+      const Swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3, /*tres colnas*/
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+});
+    </script>
+
+
+
+<section class="carrosel">
+  <h2 class="carrocel_titulo">MAIS VENDIDOS</h2>
+  <!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide"><img src="../assets/ReactNative.svg" alt="livro de ReactNative" ></div>
+<div class="swiper-slide"><img src="../assets/Tuning.svg" alt="livro de Tuning" ></div>
+<div class="swiper-slide"><img src="../assets/Nodejs.svg" alt="livro de Nodejs"></div>
+<div class="swiper-slide"><img src="../assets/Angular.svg" alt="livro de Angular"></div>
+<div class="swiper-slide"><img src="../assets/Acessibilidade.svg" alt="livro de acessibilidade"></div>
+<div class="swiper-slide"><img src="../assets/Guia Front-end.svg" alt="livro de Front-end"></div>
+</div>
+
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+
+<div class="card">
+<!--primeira linha-->
+<div class="card_descricao">
+  <!--segunda coluna-->
+  <div class="descricao">
+    <img src="../assets/Estrelinhas.svg" alt="estrelinhas">
+    <h3 class="descricao_titulo">Autora do Mês</h3>
+    <h2 class="descricao_titulo-livro">Juliana Agarikov</h2>
+    <p class="descricao_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+  </div>
+  <!--2 coluna-->
+  <img src="../assets/morena_sorrindo.svg" alt="imagem de um a com escudo vermelho atras">
+</div>
+
+<!--segunda coluna-->
+<div class="card_botoes">
+  <!--primeira coluna-->
+  <ul class="botoes">
+    <li class="botoes_item"><img src="../assets/Favoritos.svg" alt="imagem favoritos"></li>
+    <li class="botoes_item"><img src="../assets/Compras.svg" alt=""></li>
+  </ul>
+  <a class="botoes_ancora" href="#">Saiba mais</a>
+</div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--rolamento de tela-->
+<script>
+  const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 3, /*tres colnas*/
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+</script>
+
   </body>
 </html>
