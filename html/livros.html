@@ -36,7 +36,9 @@
             <a class="lista-menu_link" href="../html/home.html">Home</a>
           </li>
           <li class="lista-menu_item">
-            <a class="lista-menu_link" href="../html/sobre_mim.html">Sobre mim</a>
+            <a class="lista-menu_link" href="../html/sobre_mim.html"
+              >Sobre mim</a
+            >
           </li>
           <li class="lista-menu_item">
             <a class="lista-menu_link" href="../html/projetos.html">Projetos</a>
@@ -49,12 +51,14 @@
           </li>
         </ul>
         <img class="container_imagem" src="../assets/Logo.svg" alt="logo" />
-        <h1 class="container_titulo"><b class="container_titulo-negrito">GuiTec</b>Books</h1>
+        <h1 class="container_titulo">
+          <b class="container_titulo-negrito">GuiTec</b>Books
+        </h1>
       </div>
 
       <ul class="opcoes">
         <input class="opcoes_botao" type="checkbox" id="opcoes-menu" />
-        <label class="opcoes_rotulo" for="opcoes-menu" >
+        <label class="opcoes_rotulo" for="opcoes-menu">
           <li class="opcoes_item">Categorias</li>
         </label>
 
@@ -81,23 +85,24 @@
 
         <li class="opcoes_item">Categoria</li>
         <li class="opcoes_item">
-          <a class="opcoes_link" href="#">Favoritos</a>
+          <a class="opcoes_link" href="../html/sobre_mim.html">Favoritos</a>
         </li>
         <li class="opcoes_item">
-          <a class="opcoes_link" href="#">Minha Estante</a>
+          <a class="opcoes_link" href="../html/sobre_mim.html">Minha Estante</a>
         </li>
       </ul>
 
       <div class="container">
-        <a href="#" class="container_link">
+        <a href="../html/projetos.html" class="container_link">
           <img
             class="container_imagem container_imagem-transparent"
             src="../assets/Favoritos.svg"
             alt="meus favoritos"
           />
-          <p class="container_texto">Minha sacola</p>
+          <p class="container_texto">Meus Projetos</p>
         </a>
-        <a href="#" class="container_link">
+        
+        <a href="../html/home.html" class="container_link">
           <img
             class="container_imagem"
             src="../assets/Compras.svg"
@@ -105,7 +110,8 @@
           />
           <p class="container_texto">Meu Perfil</p>
         </a>
-        <a href="#">
+
+        <a href="../html/home.html">
           <img
             class="container_imagem"
             src="../assets/Usuário.svg"
@@ -128,78 +134,83 @@
     <section class="carrossel">
       <h2 class="carrossel_titulo">ÚLTIMOS LANÇAMENTOS</h2>
       <div class="carrossel_container">
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
 
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="../assets/ReactNative.svg" alt="livro de ReactNative" />
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="../assets/ReactNative.svg" alt="livro de ReactNative" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/Tuning.svg" alt="livro de Tuning" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/Nodejs.svg" alt="livro de Nodejs" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/Angular.svg" alt="livro de Angular" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/Acessibilidade.svg"
+                alt="livro de acessibilidade"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/Guia Front-end.svg"
+                alt="livro de Front-end"
+              />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="../assets/Tuning.svg" alt="livro de Tuning" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/Nodejs.svg" alt="livro de Nodejs" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/Angular.svg" alt="livro de Angular" />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="../assets/Acessibilidade.svg"
-              alt="livro de acessibilidade"
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+          <!--primeira linha-->
+          <div class="card_descricao">
+            <!--segunda coluna-->
+            <div class="descricao">
+              <h3 class="descricao_titulo">
+                Desenvolvedor Full Stack
+              </h3>
+              <h2 class="descricao_titulo-livro">Interessado em criar seu primeiro site?</h2>
+              <p class="descricao_texto">
+                Entre em contato comigo e eu cuidarei de tudo para você, garantindo um site personalizado e funcional.
+              </p>
+            </div>
+            <!--2 coluna-->
+            <img class="minha_imagem"
+              src="../assets/eeu.png"
+              alt="imagem de um a com escudo vermelho atras"
             />
           </div>
-          <div class="swiper-slide">
-            <img src="../assets/Guia Front-end.svg" alt="livro de Front-end" />
-          </div>
-        </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
-      <div class="card">
-        <!--primeira linha-->
-        <div class="card_descricao">
           <!--segunda coluna-->
-          <div class="descricao">
-            <h3 class="descricao_titulo">
-              Talvez você também se interesse por...
-            </h3>
-            <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
-            <p class="descricao_texto">
-              Construindo uma aplicação integrada com a plataforma do Google.
-            </p>
+          <div class="card_botoes">
+            <!--primeira coluna-->
+            <ul class="botoes">
+              <li class="botoes_item">
+                <img src="../assets/Favoritos.svg" alt="imagem favoritos" />
+              </li>
+              <li class="botoes_item">
+                <img src="../assets/Compras.svg" alt="" />
+              </li>
+            </ul>
+            <a class="botoes_ancora" href="../html/home.html"
+              >Saiba mais</a
+            >
           </div>
-          <!--2 coluna-->
-          <img
-            src="../assets/Mask group.svg"
-            alt="imagem de um a com escudo vermelho atras"
-          />
-        </div>
-
-        <!--segunda coluna-->
-        <div class="card_botoes">
-          <!--primeira coluna-->
-          <ul class="botoes">
-            <li class="botoes_item">
-              <img src="../assets/Favoritos.svg" alt="imagem favoritos" />
-            </li>
-            <li class="botoes_item">
-              <img src="../assets/Compras.svg" alt="" />
-            </li>
-          </ul>
-          <a class="botoes_ancora" href="#">Saiba mais</a>
         </div>
       </div>
-    </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--rolamento de tela-->
@@ -217,73 +228,76 @@
     <section class="carrossel">
       <h2 class="carrossel_titulo">MAIS VENDIDOS</h2>
       <div class="carrossel_container">
-      <div class="swiper">
+        <div class="swiper">
+          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/Gestão2.svg" alt="livro de ReactNative" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/Portugol.svg" alt="livro de Tuning" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/UX.svg" alt="livro de Nodejs" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/Liderança.svg" alt="livro de Angular" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/Acessibilidade.svg"
+                alt="livro de acessibilidade"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../assets/Guia Front-end.svg"
+                alt="livro de Front-end"
+              />
+            </div>
+          </div>
 
-        <div class="swiper-pagination"></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="../assets/Gestão2.svg" alt="livro de ReactNative" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/Portugol.svg" alt="livro de Tuning" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/UX.svg" alt="livro de Nodejs" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/Liderança.svg" alt="livro de Angular" />
-          </div>
-          <div class="swiper-slide">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+          <!--primeira linha-->
+          <div class="card_descricao">
+            <!--segunda coluna-->
+            <div class="descricao">
+              <img src="../assets/Estrelinhas.svg" alt="estrelinhas" />
+              <h3 class="descricao_titulo">Autor do Mês</h3>
+              <h2 class="descricao_titulo-livro">Guilherme Barros</h2>
+              <p class="descricao_texto">
+                Guilherme é desenvolvedor e escritor, especialista em
+                desenvolvimento Full Stack.
+              </p>
+            </div>
+            <!--2 coluna-->
             <img
-              src="../assets/Acessibilidade.svg"
-              alt="livro de acessibilidade"
+              class="minha_imagem1"
+              src="../assets/eu.png"
+              alt="imagem de um a com escudo vermelho atras"
             />
           </div>
-          <div class="swiper-slide">
-            <img src="../assets/Guia Front-end.svg" alt="livro de Front-end" />
-          </div>
-        </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
-      <div class="card">
-        <!--primeira linha-->
-        <div class="card_descricao">
           <!--segunda coluna-->
-          <div class="descricao">
-            <img src="../assets/Estrelinhas.svg" alt="estrelinhas" />
-            <h3 class="descricao_titulo">Autora do Mês</h3>
-            <h2 class="descricao_titulo-livro">Juliana Agarikov</h2>
-            <p class="descricao_texto">
-              Analista de sistemas e escritora, Juliana é especialista em
-              Front-End.
-            </p>
+          <div class="card_botoes">
+            <!--primeira coluna-->
+            <ul class="botoes">
+              <li class="botoes_item">
+                <img src="../assets/Favoritos.svg" alt="imagem favoritos" />
+              </li>
+              <li class="botoes_item">
+                <img src="../assets/Compras.svg" alt="" />
+              </li>
+            </ul>
+            <a class="botoes_ancora" href="../html/sobre_mim.html">Saiba mais</a>
           </div>
-          <!--2 coluna-->
-          <img
-            src="../assets/morena_sorrindo.svg"
-            alt="imagem de um a com escudo vermelho atras"
-          />
-        </div>
-
-        <!--segunda coluna-->
-        <div class="card_botoes">
-          <!--primeira coluna-->
-          <ul class="botoes">
-            <li class="botoes_item">
-              <img src="../assets/Favoritos.svg" alt="imagem favoritos" />
-            </li>
-            <li class="botoes_item">
-              <img src="../assets/Compras.svg" alt="" />
-            </li>
-          </ul>
-          <a class="botoes_ancora" href="#">Saiba mais</a>
         </div>
       </div>
-    </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--rolamento de tela-->
@@ -342,7 +356,7 @@
     <footer class="rodape">
       <h2 class="rodape_titulo">Grupo GuiTec</h2>
       <ul class="lista-rodape">
-        <li class="lista-rodape_titulo">Educacao</li>
+        <li class="lista-rodape_titulo">EDUCAÇÃO </li>
         <li class="lista-rodape_item">
           <img src="../assets/Caelum.svg" alt="Caelum" />
           <a href="#" class="lista-rodape_link"> Caelum</a>
@@ -356,26 +370,7 @@
 
       <ul class="lista-rodape">
         <li class="lista-rodape_titulo">EDUCAÇÃO ONLINE</li>
-        <li class="lista-rodape_item">
-          <img src="../assets/GuiTec.svg" alt="GuiTec" />
-          <a href="#" class="lista-rodape_link"> GuiTec</a>
-        </li>
-        <li class="lista-rodape_item">
-          <img src="../assets/GuiTecEmpresas.svg" alt="GuiTecEmpresas" />
-          <a href="#" class="lista-rodape_link"> GuiTec Empresas</a>
-        </li>
-        <li class="lista-rodape_item">
-          <img src="../assets/GuiTecLatam.svg" alt="GuiTecLatam" />
-          <a href="#" class="lista-rodape_link"> GuiTec Latam</a>
-        </li>
-        <li class="lista-rodape_item">
-          <img src="../assets/GuiTecLingua.svg" alt="GuiTecLingua" />
-          <a href="#" class="lista-rodape_link"> GuiTec Lingua</a>
-        </li>
-        <li class="lista-rodape_item">
-          <img src="../assets/GuiTecStart.svg" alt="GuiTecStart" />
-          <a href="#" class="lista-rodape_link"> GuiTec Start</a>
-        </li>
+        <li class="lista-rodape_item"></li>
 
         <li class="lista-rodape_item">
           <img

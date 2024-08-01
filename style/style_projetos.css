@@ -15,9 +15,9 @@ body {
   font-size: 16px; /*tamanho da font*/
   font-weight: 400; /*peso da font*/
   background-image: url("../assets/astronalta.jpg"); /* Adiciona imagem de fundo */
-  background-size: cover; /* Garante que a imagem cubra toda a área disponível */
+/*  background-size: cover; /* Garante que a imagem cubra toda a área disponível */
   background-position: center; /* Centraliza a imagem no elemento */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
+/*  background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 
 * {
@@ -78,6 +78,7 @@ body {
   font-size: 40px; /*tamanho da font*/
   font-weight: 700; /*peso de font*/
   text-align: center;
+  text-align: left;
   margin-top: 50px;
 }
 

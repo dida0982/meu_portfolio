@@ -61,6 +61,17 @@
    font-size: 14px;
 }
 
+.minha_imagem1{
+   border-radius: 1em;
+   width: 162px;
+   height: 168px;
+}
+
+.minha_imagem{
+   width: 162px;
+   height: 168px;
+}
+
 .botoes_item{
    margin: 0 0.5em;
 }
