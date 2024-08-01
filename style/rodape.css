@@ -6,3 +6,51 @@ hr{
     background-color: var(--branco);
     padding: 1em;
 }
+
+.lista_rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape{
+        display: flex; /*ficar um do lado do outro*/
+        justify-content: space-around; /*espacamento */
+    }
+
+    .lista-rodape{
+        display: block;
+    }
+
+    .lista-rodape_item{
+        display: flex; /*colocar um do lado do outro */
+        align-items: center; /*itens ao centro*/
+        margin: 0.6em 0; /*espacamento*/
+    }
+
+    .lista-rodape_link {
+        color: var(--cinza); /*cor da font*/
+        text-decoration: none; /*tirar a decoracao automatica */
+        margin-left: 0.6em; /*espacamento*/
+    }
+
+    .lista-rodape_titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+
+    .rodape_titulo{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .lista-rodape{
+    border-left: 1px solid var(--cinza-claro);
+    padding-left: 1em;
+    }
+
+    .rodape{
+        padding: 3em 0;
+    }
+}

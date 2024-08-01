@@ -1,4 +1,4 @@
-.carrocel_titulo {
+.carrossel_titulo {
   color: var(--laranja);
   /*background-color: var(--branco);*/
   text-align: center;
@@ -88,11 +88,37 @@
 
    .swiper-button-prev, .swiper-button-next {
       display: block;
-      top: 60%;
+      top: 60%; 
    }
 
    .card{
-      width: 40%;
-      margin: 2em auto;
+      width: 40%; /*altura*/
+      margin: 2em auto; /*espacamento*/
    }
+}
+
+@media screen and (min-width: 1728px) {
+   .carrossel_container{
+      display: flex; /*um ao lado do outro */
+      margin: 0 20vw 3em 20vw; /**/
+      align-items: center;
+   }
+
+   .swiper-pagination{
+      margin: 1em 0;
+   }
+
+   .swiper{
+      width: 50%;
+   }
+
+   .descricao_texto{
+      font-size: 16px;
+   }
+
+   .card{
+      width: 60%;
+      margin-left: 3em;
+   }
+
 }
