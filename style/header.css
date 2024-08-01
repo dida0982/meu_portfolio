@@ -1,60 +1,116 @@
-.cabecalho_menu-hanburgue{
-    width: 24px; /*largura*/
-    height: 24px; /*altura*/
-    background-image: url(../assets/Menu.svg); /*imagem*/
-    background-repeat: no-repeat;
-    background-position: center; /*posicionar no centro*/
-    display: inline-block; /**/
-    
+.cabecalho_menu-hanburgue {
+  width: 24px; /*largura*/
+  height: 24px; /*altura*/
+  background-image: url(../assets/Menu.svg); /*imagem*/
+  background-repeat: no-repeat;
+  background-position: center; /*posicionar no centro*/
+  display: inline-block; /**/
 }
 
 .cabecalho {
-    background-color: var(--branco);
-    display: flex;
-    justify-content: space-between; /*separa os objetos*/
-    align-items: center; /*alinha os objetos*/
-    position: relative; /*para colocar a lista em baixo */
+  background-color: var(--branco);
+  display: flex;
+  justify-content: space-between; /*separa os objetos*/
+  align-items: center; /*alinha os objetos*/
+  position: relative; /*para colocar a lista em baixo */
 }
 
-.container{
-    display: flex;
-    align-items: center; /*alinha no centro */
+.container {
+  display: flex;
+  align-items: center; /*alinha no centro */
 }
 
-.container_imagem{
-    padding: 1rem; /*espacamento*/
+.container_imagem {
+  padding: 1rem; /*espacamento*/
 }
 
-.lista-menu{
-    display: none; /*para simur com alista */
-    position: absolute; /*para colocar a lista em baixo */
-    width: 60vw;
+.lista-menu {
+  display: none; /*para simur com alista */
+  position: absolute; /*para colocar a lista em baixo */
+  width: 60vw;
 }
 
-.container_botao:checked~.lista-menu{ 
-    display: block; /*para a lista aparecer quando eu clicar no hamburguer */
-    top: 100%; /*para colocar a lista em baixo*/
+.container_botao:checked ~ .lista-menu {
+  display: block; /*para a lista aparecer quando eu clicar no hamburguer */
+  top: 100%; /*para colocar a lista em baixo*/
 }
 
 .lista-menu_titulo,
-.lista-menu_item { /*para fazer a lista do hamburguer*/
-    padding: 1rem;
-    background-color: var(--branco);
+.lista-menu_item {
+  /*para fazer a lista do hamburguer*/
+  padding: 1rem;
+  background-color: var(--branco);
 }
 
 .lista-menu_titulo {
-    color: var(--laranja);
-    font-weight: 700; /*peso da font*/
+  color: var(--laranja);
+  font-weight: 700; /*peso da font*/
 }
 
-.lista-menu_link{ /*cores da lista da navbar*/
-    background: var(--azul-degrade);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-transform: uppercase; /*todas as letras em maiuscula*/
+.lista-menu_link {
+  /*cores da lista da navbar*/
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase; /*todas as letras em maiuscula*/
 }
 
-.container_botao{
-    display: none; /*para desaparecer um simbolo automatico*/
+.container_botao {
+  display: none; /*para desaparecer um simbolo automatico*/
+}
+
+.container_titulo {
+  display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+@media screen and (min-widht: 1024px) {
+  .container_titulo,
+  .container_titulo-negrito {
+    font-family: var(--fonte-secundario);
+    font-size: 30px;
+  }
+
+  .container_titulo {
+    font-weight: 400;
+    display: block;
+  }
+  .container_titulo-negrito {
+    font-weight: 700;
+  }
+
+  .opcoes{
+    display: flex;
+  }
+
+  .opcoes_item{
+    padding: 0 1em;
+    text-transform: uppercase;
+  }
+
+  .opcoes_link{
+    text-decoration: none;
+    color: var(black);
+  }
+
+  .container_imagem-transparent {
+    display: none;
+  }
+
+  .cabecalho_menu-hanburgue{
+    display: none;
+  }
+
+  .opcoes_botao:checked ~ .lista-menu{
+    display: block;
+    width: auto;
+  }
+
+  .opcoes_botao{
+    display: none;
+  }
 }

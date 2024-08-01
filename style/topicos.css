@@ -28,3 +28,13 @@
     font-size: 14px; /*tamanho da font*/
     font-weight: 700; /*peso da font*/
 }
+
+@media screen and (min-width: 1024px){
+    .topicos_titulos{
+        font-size: 24px;
+    }
+
+    .topicos_link {
+        font-size: 24px;
+    }
+}
