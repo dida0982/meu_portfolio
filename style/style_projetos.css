@@ -2,10 +2,10 @@
   /*global css*/
   --branco-principal: #ffffff;
   --cinza-secundario: #c0c0c0;
-  --botao-azul: #167bf7;
-  --cor-de-fundo: #00030c;
+  --botao-azul: #22d4fd;
+  --cor-de-fundo: #f6f6f6;
   --fonte-principal: "Inter"; /*estilo da fonte*/
-  --botao-azul-efeitos: #3c92fa;
+  --botao-azul-efeitos: #000000;
 }
 
 body {
@@ -58,7 +58,7 @@ body {
   background-color: var(--botao-azul); /*cor de fiundo para o ancora */
   border-radius: 5px; /*arredondar borda*/
   padding: 1rem; /*espacamento da cor de fundo*/
-  color: var(--branco-principal); /*cor do texto*/
+  color: var(--branco-azul); /*cor do texto*/
   display: block;
   text-decoration: none; /*tirar a decoreacao da font*/
   margin-bottom: 1rem; /*espacamento entre os botoes*/
@@ -179,8 +179,10 @@ body {
 }
 
 .container_botao:hover {
+  background-color: transparent;
   background-color: var(--botao-azul-efeitos);
   color: var(--cor-de-fundo);
+  
 }
 
 @media screen and (max-width: 768px) {
