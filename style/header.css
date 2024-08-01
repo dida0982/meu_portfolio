@@ -128,6 +128,20 @@
 
   .opcoes_botao:checked ~ .opcoes_rotulo > .opcoes_item {
     background: var(--azul-degrade);
+    color: var(--branco);
+  }
+
+  .opcoes_item{
+    padding: 2em 1em;
+  }
+
+  .lista-menu_item:houver {
+    background: var(--azul-degrade);
+  }
+
+  .lista-menu_item:houver>.lista-menu_link{
+    -webkit-text-fill-color:var(--branco);
+    text-decoration:none
   }
 }
 
